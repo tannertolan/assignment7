@@ -1,0 +1,7 @@
+Design Memo: Doctor Tree and Emergency Queue
+
+A tree is a good choice for the doctor reporting system because it clearly shows how doctors are connected. Each doctor can have two people under them, which fits how branches grow from a main trunk. This setup makes it easy to see who reports to who and to move through the structure step by step.
+
+The three traversal types have different uses. Preorder works well when you want to start at the top doctor and then visit everyone below them. Inorder goes through the left side, then the main doctor, then the right side, which can show the structure in a balanced order. Postorder is helpful when you want to go through everyone under a doctor first before visiting that doctor, like checking the lowest level before the top.
+
+The heap fits the emergency queue system because it always keeps the most urgent patient at the front. The patient with the lowest urgency number is treated first. When new patients come in or one is helped, the heap automatically reorganizes itself to stay in the right order. This makes it a great structure for real-time systems like emergency rooms, where patients are always coming and going and the program has to stay fast and organized.
